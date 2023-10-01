@@ -1,6 +1,6 @@
 /**
  * @param {string} code - string
- * @param {string name - string
+ * @param {string} name - string
  */
 
 export default class Currency {
