@@ -1,4 +1,4 @@
-function updateUniqueItems(map){
+export default function updateUniqueItems(map){
   if(!(map instanceof Map)){
     throw new Error('Cannot process');
 }
@@ -8,4 +8,3 @@ for (const [item, quantity] of map){
     }
   }
 }
-export default updateUniqueItems;
