@@ -1,0 +1,51 @@
+# Node.js
+node_modules/
+
+# Dependency directories
+jspm_packages/
+bower_components/
+
+# macOS
+.DS_Store
+
+# OS-generated files
+Thumbs.db
+
+# Editor and IDE files
+.vscode/
+.idea/
+
+# Compiled output
+dist/
+out/
+
+# Logs and databases
+*.log
+*.sql
+
+# Environment configuration files
+.env
+.env.local
+.env.*.local
+
+# Dependency files
+yarn.lock
+package-lock.json
+
+# Binary files (e.g., images or videos)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.ico
+*.woff
+*.woff2
+*.eot
+*.ttf
+*.otf
+*.pdf
+*.swp
+
+# Caches and build directories
+.cache/
+.build/
