@@ -1,0 +1,22 @@
+# Node.js
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# Dependency directories
+package-lock.json
+npm-debug.log
+
+# Environment variables
+.env
+
+# Mac OS
+.DS_Store
+
+# Visual Studio Code
+.vscode/
+
+# Jest coverage directory
+coverage/
