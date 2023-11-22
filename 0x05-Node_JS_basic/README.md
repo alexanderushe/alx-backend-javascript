@@ -1,7 +1,7 @@
 
 # 0x05. Node JS Basics
 
-![MyImage]:https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/1/82692897e15d9f03256f.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231120%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231120T133400Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=d31e5789eb0f24361cc6381d1e36afc1a69c37cd8b2eca32fc30dd8b840b04a4
+![MyImage](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/1/82692897e15d9f03256f.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231120%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231120T133400Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=d31e5789eb0f24361cc6381d1e36afc1a69c37cd8b2eca32fc30dd8b840b04a4)
 
 # Resources
 ## Read or watch:
