@@ -1,10 +1,10 @@
 const fs = require('fs');
 
-const countStudents = (data) => new Promise((resolve, reject) => {
-  fs.readFile(data, 'utf-8', (err, data) => {
+
+const countStudents = (dataPath) => new Promise((resolve, reject) => {
+  fs.readFile(dataPath, 'utf-8', (err, data) => {
     if (err) {
-      reject(new Error('Cannot laod the database'));
-      return;
+      reject(new Error('Cannot load the database'));
     }
     if (data) {
       const fileLines = data
@@ -32,7 +32,7 @@ const countStudents = (data) => new Promise((resolve, reject) => {
       const totalStudents = Object
         .values(studentGroups)
         .reduce((pre, cur) => (pre || []).length + cur.length);
-      console.log(`number of students: ${totalStudents}`);
+      console.log(`Number of students: ${totalStudents}`);
       for (const [field, group] of Object.entries(studentGroups)) {
         const studentNames = group.map((student) => student.firstname).join(', ');
         console.log(`Number of students in ${field}: ${group.length}. List: ${studentNames}`);
