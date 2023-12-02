@@ -5,6 +5,8 @@ interface Student {
     location: string;
 }
 
+const studentList: Student[] = [];
+
 const student: Student ={
     firstName: "John",
     lastName: "Doe",
@@ -18,25 +20,20 @@ const student2: Student = {
     location: "Zimbabwe",
 }
 
-const studentsList: Student[] = [student, student2];
+studentList.push(student, student2);
 
 function renderTable(students: Student[]) {
     const table = document.createElement("table");
 
-    //table header
-    const headerRow = table.insertRow();
-    const firstNameHeader = headerRow.insertCell();
-    firstNameHeader.textContent = "First Name";
-    const locationHeader = headerRow.insertCell();
-    locationHeader.textContent = "Location";
-
-    //create a row for each student
-    for (const student of students) {
+    //render table
+    studentList.forEach((student) => {
         const row = table.insertRow();
-        const firstNameCell = row.insertCell();
-        firstNameCell.textContent = student.firstName;
-        const locationCell = row.insertCell();
-        locationCell.textContent = student.location;
-    }
+        const cell1 = row.insertCell(0);
+        const cell2 = row.insertCell(1);
+
+        cell1.textContent = student.firstName;
+        cell2.textContent = student.location;
+    });
+
     document.body.appendChild(table);
 }

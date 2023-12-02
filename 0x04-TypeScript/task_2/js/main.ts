@@ -18,7 +18,7 @@ export class Director implements DirectorInterface {
         return 'Getting a coffee break';
     }
     workDirectorTasks(): string {
-        return 'Getting to director tasks'
+        return 'Getting to director tasks';
     }
 }
 

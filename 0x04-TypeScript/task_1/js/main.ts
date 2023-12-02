@@ -11,12 +11,33 @@ export interface Directors extends Teacher {
     numberOfReports: number,
 }
 
-export function printTeacher(firstName: string, lastName: string): string {
-    return `${firstName[0]}. ${lastName}`;
+//printTecher function interface
+interface printTeacherFunction {
+    (firstName: string, lastName: string): string;
 }
-class StudentClass {
+
+//implement the printTeacher function using the defined interface
+export const printTeacher: printTeacherFunction = (firstName, lastName) => {
+    const firstLetter  = firstName.charAt(0).toUpperCase();
+    const fullLastName = lastName.charAt(0).toUpperCase() + lastName.slice(1);
+    return `${firstLetter} . ${fullLastName}`;
+}
+
+//define interface for constructor
+interface studentConstructor {
+    new (firstName:string, lastName:string): StudentClass;
+}
+
+//define interface for class
+interface StudentClass {
+    workOnHomework(): string;
+    displayName():string;
+}
+
+ const StudentClass: studentConstructor = class implements StudentClass{
     private _firstName!: string;
     private _lastName!: string;
+
     constructor(firstName: string, lastName: string){
         this._firstName = firstName;
         this._lastName = lastName;
